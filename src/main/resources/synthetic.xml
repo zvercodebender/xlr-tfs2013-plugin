@@ -8,11 +8,11 @@
 -->
 <synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd" xmlns="http://www.xebialabs.com/deployit/synthetic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<type type="tfs2013.CreateWorkItem" extends="remoteScript.Windows">
-		<property name="iconLocation" default="tfs2015/tfs.png" hidden="true" />
+		<property name="iconLocation" default="tfs2013/tfs.png" hidden="true" />
 		<property name="taskColor" hidden="true" default="#68217a" />
 
 		<property name="remotePath" category="input" default="C:\xlr-tfs2013-plugin" />
-		<property name="script" category="input" default="CreateWorkItem.bat ${project} ${type} ${collection} ${title}" />
+		<property name="script" category="input" default="CreateWorkItem.bat ${project} ${type} ${collection} ${title} ${assignedTo} ${description}" />
 	</type>
 
 </synthetic>
