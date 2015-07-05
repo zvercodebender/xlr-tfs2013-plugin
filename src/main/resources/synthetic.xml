@@ -12,7 +12,8 @@
 		<property name="taskColor" hidden="true" default="#68217a" />
 
 		<property name="remotePath" category="input" default="C:\xlr-tfs2013-plugin" />
-		<property name="script" category="input" default="CreateWorkItem.bat ${project} ${type} ${collection} ${title} ${assignedTo} ${description}" />
+		<property name="script" category="input" default="CreateWorkItem.bat &quot;${project}&quot; &quot;${type}&quot; &quot;${collection}&quot; &quot;${title}&quot; &quot;${assignedTo}&quot; &quot;${description}&quot;" />
+		<property name="workItemNumber" category="output" />
 	</type>
 
 </synthetic>

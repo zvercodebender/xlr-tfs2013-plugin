@@ -4,6 +4,7 @@
 # FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
 #
 
+import re
 import sys
 from com.xebialabs.xlrelease.plugin.overthere import WinrmRemoteScript
 from com.xebialabs.overthere.cifs import CifsConnectionBuilder
@@ -25,6 +26,8 @@ err = script.getStderr()
 
 if (exitCode == 0):
     print output
+    (str,) = re.search('Work item ([0-9]+) created', output).groups()
+    workItemNumber = int(str)
 else:
     print "Exit code "
     print exitCode
