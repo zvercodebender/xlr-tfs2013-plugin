@@ -7,6 +7,7 @@
 
 -->
 <synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd" xmlns="http://www.xebialabs.com/deployit/synthetic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
 	<type type="tfs2013.CreateWorkItem" extends="remoteScript.Windows">
 		<property name="iconLocation" default="tfs2013/tfs.png" hidden="true" />
 		<property name="taskColor" hidden="true" default="#68217a" />
@@ -15,12 +16,21 @@
 		<property name="script" category="input" default="CreateWorkItem.bat &quot;${project}&quot; &quot;${type}&quot; &quot;${collection}&quot; &quot;${title}&quot; &quot;${assignedTo}&quot; &quot;${description}&quot;" />
 		<property name="workItemNumber" category="output" />
 	</type>
+	
 	<type type="tfs2013.GetWorkItem" extends="remoteScript.Windows">
 		<property name="iconLocation" default="tfs2013/tfs.png" hidden="true" />
 		<property name="taskColor" hidden="true" default="#68217a" />
 
 		<property name="remotePath" category="input" default="C:\xlr-tfs2013-plugin" />
 		<property name="script" category="input" default="GetWorkItem.bat &quot;${workItemNumber}&quot; &quot;${collection}&quot;" />
+	</type>
+	
+	<type type="tfs2013.UpdateWorkItem" extends="remoteScript.Windows">
+		<property name="iconLocation" default="tfs2013/tfs.png" hidden="true" />
+		<property name="taskColor" hidden="true" default="#68217a" />
+
+		<property name="remotePath" category="input" default="C:\xlr-tfs2013-plugin" />
+		<property name="script" category="input" default="UpdateWorkItem.bat &quot;${workItemNumber}&quot; &quot;${collection}&quot; &quot;${fields}&quot;" />
 	</type>
 
 </synthetic>

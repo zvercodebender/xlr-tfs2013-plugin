@@ -1,6 +1,6 @@
 @echo off
 setlocal enableDelayedExpansion
-REM parameters are 1 = Work Item number, 2 = collection
+REM parameters are 1 = Work Item number, 2 = Collection
 set num=%~1
 set coll=%~2
 set coll=!coll: =%%20!
