@@ -15,5 +15,12 @@
 		<property name="script" category="input" default="CreateWorkItem.bat &quot;${project}&quot; &quot;${type}&quot; &quot;${collection}&quot; &quot;${title}&quot; &quot;${assignedTo}&quot; &quot;${description}&quot;" />
 		<property name="workItemNumber" category="output" />
 	</type>
+	<type type="tfs2013.GetWorkItem" extends="remoteScript.Windows">
+		<property name="iconLocation" default="tfs2013/tfs.png" hidden="true" />
+		<property name="taskColor" hidden="true" default="#68217a" />
+
+		<property name="remotePath" category="input" default="C:\xlr-tfs2013-plugin" />
+		<property name="script" category="input" default="GetWorkItem.bat &quot;${workItemNumber}&quot; &quot;${collection}&quot;" />
+	</type>
 
 </synthetic>
