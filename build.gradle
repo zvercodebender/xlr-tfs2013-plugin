@@ -1,18 +1,28 @@
-buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath "nl.javadude.gradle.plugins:license-gradle-plugin:0.11.0"
-  }
+plugins {
+  id "com.github.hierynomus.license" version "0.11.0"
 }
 
-apply plugin: "com.github.hierynomus.license"
+version='1.0.7'
+
 apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
 
-version="1.0.7"
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
-apply plugin: "com.github.hierynomus.license"
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven {
+    credentials {
+      username 'community-plugins'
+      password 'community'
+    }
+    url 'http://nexus.xebialabs.com/nexus/content/repositories/releases'
+  }
+
+}
 
 license {
     header rootProject.file('src/main/license/xebialabs_community.license')

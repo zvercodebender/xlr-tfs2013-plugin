@@ -8,5 +8,8 @@ deploy:
   api_key:
     secure: m/ek04ToPVIb/5pIRZ2W3whj3OmywWAe9c0hBNN7e5vB0QzVTLqtvt84oknprMMMANVMys5DF02SApdsZgg9gDpRQAFOp+aix40kivvSJgF+XIqNK+Raenn+EWU8GYIj6bQDT6Vvz20MClH/3dpSNsJH7uD9NM9WVe/ApcWbgmgkRBm0LIRv5p5U1GVr0h+rpbte+MWOm+EOzVmIxm4XukRcFYttaSOgGvNe9eeG7P1g/aUTtSy19Dju6JJLlSSSuK181xVSQzteID4PZWq97Kb2RNFUNlcD6t4bu4syMe3ILiBLmoj8++nYGXRNBEvzSLd9MvGqvGuAfpsGhB01frFEAoo4icMISBhNQdREy0Ui76/NYJjMVysigq+M+y6Gt4t93EK6s1OTaR1SwmlgrT/sUkUJr5E9uNew+tEv/1zZ4b7gAD53flZaPOkhm7FUc7sc+HiEjN76iDXiA+RdKiM9a8tF5l/Cd5/fL2r9xexLZWVytf+E2dlSA6EZbJjj1QiVn3R2rJO3YJNbtApVeNAh4QWQ96l6+lxKCNVtuO8PKdyIL1Z0RNXFJuJrtZElSnO7MJmHn5obZ0Kd+BCDbTcVfaQlZxSZYti3L3VEoysFqP0CgsMbR84JPRNj7ipWA9zOJI0yYpVjYjEXDoSSvIdckAhJ/8XIV+j5dLAdRFs=
   file: build/libs/xlr-tfs2013-plugin-1.0.7.jar
+  skip_cleanup: true
   on:
+    all_branches: true
+    tags: true
     repo: xebialabs-community/xlr-tfs2013-plugin
