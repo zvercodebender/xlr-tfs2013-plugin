@@ -1,6 +1,6 @@
 # xlr-tfs2013-plugin v1.0.7
 
-This plugin offers an interface from XL Release to Team Foundation Server 2013 to create Work Items.  The following actions are supported:
+This plugin offers an interface from XL Release to Team Foundation Server 2013 to create Work Items. The following actions are supported:
 
 #### CreateWorkItem
 The CreateWorkItem.py script creates a new Work Item by executing a remote Windows batch wrapper script, CreateWorkItems.bat.  Input parameters are Collection, Project, Type, Title, AssignedTo, and Description; the script returns the number of the Work Item created.  
