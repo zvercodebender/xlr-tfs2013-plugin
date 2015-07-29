@@ -8,7 +8,7 @@ deploy:
   provider: releases
   api_key:
     secure: LCEgn/tiT0UCOyLiGeGvFviuKQE/KoyTgaKGVnBEyuuoN4nOEA37cSgj7gX7jTJfm/6JDHOFXEfPLs/SqwFWX4JhlCz/R4xGYnzbKuT+rRVaZem9jdTBV+S9PWKuoFywL8omutuN7eQwx5jTqJlC/+7YVdRiihrgMPbOqoq+RVt9AqO6wvpQ22Cf6CUJPwZtXZpnen6nvDYswZpidDFN7mhcTRgCqbCBUBAqIHrYQklqNM726KygaTCPp2Pq8JSCmBT/X93RepLoRaCOTTbZxubTQX70ruta32vVyFmewcATQ8xcQ5F5Kn7ka3vxZi2tnQXG6En3MZH0tWkLE+1wD6o7Rv/kh3fO/iZ5ZXDElrfQiEeuWKCX+2wTvH1zMdNkOja75UDkEEhJGCKaXF7tubdtRnDHgRH7wM8zGcSUJYJQHFaUrEmkCnoqO2EiYtKRHv+ZG+otstYqrDaT/VLyvG5zps6z4UIgAkRXrVyKNUHS/Hqgikewn8VEzBi1cT6c2Ns7lawFuUZgzAlIKHGqDhSZcB+FfCr3EcQ/07rWec/7h+wpHnm6Ql7PEq6B0Nk8QC5DulIOtlig91J5QZiJpL0qu3T3KlZMzqA3uwkuoixja7u/EKkbha2wMak0c2kQKZEmlx8w6mp1TMjHwBzsLNZN9/z8buF062QPuxRNPTs=
-  file: build/libs/xlr-tfs2013-plugin-1.0.7.jar
+  file: build/libs/xlr-tfs2013-plugin-1.0.8.jar
   skip_cleanup: true
   on:
     all_branches: true
