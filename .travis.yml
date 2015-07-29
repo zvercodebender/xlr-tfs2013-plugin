@@ -1,4 +1,5 @@
 language: java
+sudo: false
 notifications:
   hipchat:
     rooms:
@@ -6,10 +7,7 @@ notifications:
 deploy:
   provider: releases
   api_key:
-    secure: m/ek04ToPVIb/5pIRZ2W3whj3OmywWAe9c0hBNN7e5vB0QzVTLqtvt84oknprMMMANVMys5DF02SApdsZgg9gDpRQAFOp+aix40kivvSJgF+XIqNK+Raenn+EWU8GYIj6bQDT6Vvz20MClH/3dpSNsJH7uD9NM9WVe/ApcWbgmgkRBm0LIRv5p5U1GVr0h+rpbte+MWOm+EOzVmIxm4XukRcFYttaSOgGvNe9eeG7P1g/aUTtSy19Dju6JJLlSSSuK181xVSQzteID4PZWq97Kb2RNFUNlcD6t4bu4syMe3ILiBLmoj8++nYGXRNBEvzSLd9MvGqvGuAfpsGhB01frFEAoo4icMISBhNQdREy0Ui76/NYJjMVysigq+M+y6Gt4t93EK6s1OTaR1SwmlgrT/sUkUJr5E9uNew+tEv/1zZ4b7gAD53flZaPOkhm7FUc7sc+HiEjN76iDXiA+RdKiM9a8tF5l/Cd5/fL2r9xexLZWVytf+E2dlSA6EZbJjj1QiVn3R2rJO3YJNbtApVeNAh4QWQ96l6+lxKCNVtuO8PKdyIL1Z0RNXFJuJrtZElSnO7MJmHn5obZ0Kd+BCDbTcVfaQlZxSZYti3L3VEoysFqP0CgsMbR84JPRNj7ipWA9zOJI0yYpVjYjEXDoSSvIdckAhJ/8XIV+j5dLAdRFs=
+    secure: LCEgn/tiT0UCOyLiGeGvFviuKQE/KoyTgaKGVnBEyuuoN4nOEA37cSgj7gX7jTJfm/6JDHOFXEfPLs/SqwFWX4JhlCz/R4xGYnzbKuT+rRVaZem9jdTBV+S9PWKuoFywL8omutuN7eQwx5jTqJlC/+7YVdRiihrgMPbOqoq+RVt9AqO6wvpQ22Cf6CUJPwZtXZpnen6nvDYswZpidDFN7mhcTRgCqbCBUBAqIHrYQklqNM726KygaTCPp2Pq8JSCmBT/X93RepLoRaCOTTbZxubTQX70ruta32vVyFmewcATQ8xcQ5F5Kn7ka3vxZi2tnQXG6En3MZH0tWkLE+1wD6o7Rv/kh3fO/iZ5ZXDElrfQiEeuWKCX+2wTvH1zMdNkOja75UDkEEhJGCKaXF7tubdtRnDHgRH7wM8zGcSUJYJQHFaUrEmkCnoqO2EiYtKRHv+ZG+otstYqrDaT/VLyvG5zps6z4UIgAkRXrVyKNUHS/Hqgikewn8VEzBi1cT6c2Ns7lawFuUZgzAlIKHGqDhSZcB+FfCr3EcQ/07rWec/7h+wpHnm6Ql7PEq6B0Nk8QC5DulIOtlig91J5QZiJpL0qu3T3KlZMzqA3uwkuoixja7u/EKkbha2wMak0c2kQKZEmlx8w6mp1TMjHwBzsLNZN9/z8buF062QPuxRNPTs=
   file: build/libs/xlr-tfs2013-plugin-1.0.7.jar
-  skip_cleanup: true
   on:
-    all_branches: true
-    tags: true
     repo: xebialabs-community/xlr-tfs2013-plugin
